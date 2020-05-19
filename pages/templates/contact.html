@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Contact Details{% endblock %}
+
+{% block content%}
+
+<style>
+body {
+  background-image: url("{% static 'images/background.png' %}");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+<center><h3>This is the contact page</h3></center>
+
+<h5><em>{{ myemail }}</em></h5>
+
+<br/><br/>
+
+
+<div class="card" style="width: 23rem;">
+  <img src="{% static '/images/link.png' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Check out my Instagram&#8482; profile too.</h5>
+    <p class="card-text">If you did like this humble website of mine, please feel free to drop a message for me in my Instagram&#8482; DM !</p>
+    <a href="https://www.instagram.com/no._.stoppin/" class="btn btn-secondary">no._.stoppin</a>
+  </div>
+</div>
+
+{% endblock %}

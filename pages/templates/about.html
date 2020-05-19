@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Me{% endblock %}
+
+{% block content%}
+
+<style>
+body {
+  background-image: url("{% static 'images/background.png' %}");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+ 
+<br><br/>
+	
+<h5><i>A few lines about me...</i></h5>
+<br><br/>
+
+<b>
+	<center><h5>{{ myname }}</h5></center>
+	<br></br>
+
+	<center><img src="{% static 'images/me.png' %}" width="150" height="200"></center> 
+	<br></br>
+
+	<h4>{{ academic }}</h4>
+
+	<br><br/>
+
+	<h4>{{ hobby }}</h4>
+
+	<h4>Recently I have taken up a lot of interest in Java, Python, Web development, TensorFlow, BASH and various other things. I'm still an amateur in all these but I'm slowly gaining experience with time. I might share a few of my projects too!</h4> 
+</b>
+
+
+
+
+
+{% endblock %}	

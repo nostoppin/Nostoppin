@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}A word of thanks{% endblock %}
+
+
+
+{% block content%}
+
+<style>
+body {
+  background-image: url("{% static 'images/background.png' %}");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>	
+
+<h4>{{ lastpageline }}</h4>
+
+</br>
+
+<div class="card">
+  <div class="card-header">
+   <b></b>	
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Codemy.com</h5>
+    <p class="card-text">Click the button below to look in on Codemy</p>
+    <a href="https://codemy.com/" class="btn btn-secondary">Visit Codemy.com</a>
+  </div>
+</div>
+
+
+<br></br>
+
+<h5>{{ lastpageline1 }}</h5>
+
+
+<br></br>
+<br></br>
+<br></br>
+<h4>Check out the following links to essential stuff:</h4>
+
+<br></br>
+
+<h5><strong>BOOTSTRAP</strong></h5>
+<h5><a href="https://getbootstrap.com/" style="color:white"><em>Visit Bootstrap</em></a></h5>
+
+<h5><strong></strong>GITHUB</strong></h5>
+<h5><a href="https://github.com/" style="color:white"><em>Visit GitHub</em></a></h5>
+
+<h5><strong>HEROKU</strong></h5>
+<h5><a href="https://www.heroku.com/" style="color:white"><em>Visit Heroku</em></a></h5>
+
+<h5><strong>PYTHON</strong></h5>
+<h5><a href="https://www.python.org/ftp/python/3.8.3/python-3.8.3.exe" style="color:white"><em>Download Python</em></a></h5>
+
+<h5><strong>SUBLIME TEXT EDITOR</strong></h5>
+<h5><a href="https://download.sublimetext.com/Sublime%20Text%20Build%203211%20x64%20Setup.exe" style="color:white"><em>Download Sublime</em></a></h5>
+
+
+{% endblock %}

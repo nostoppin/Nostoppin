@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Content page{% endblock %}
+
+{% block content %}
+
+<div class="alert alert-primary" role="alert">
+  <h5>You might also want to contact my </h5><a href="https://www.instagram.com/no._.stoppin/"  style="color:#1167AF"><h5><i>Instagram id</i><h5></a><h5> if you wish to collaborate with me and hence, you can post things here too and share them with the world!</h5> 
+</div>
+
+<style>
+body {
+  background-image: url("{% static 'images/background.png' %}");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+<br/>
+<br/>
+
+<center><h3><em>This is the Content Page</em></h3></center>
+</br>
+
+<h5>{{ line1 }}</h5>
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+{% endblock %}
